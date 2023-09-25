@@ -234,7 +234,7 @@ angular.module("api-tools-ui/dashboard/dashboard.html", []).run(["$templateCache
     "<div class=\"row dashboard\">\n" +
     "  <div class=\"col-xs-12\">\n" +
     "    <div>\n" +
-    "      <h1>Welcome to Laminas API Tools!</h1>\n" +
+    "      <h1>Welcome to Laminas API Toolsw!</h1>\n" +
     "\n" +
     "      <p class=\"lead\">\n" +
     "        <strong>Laminas API Tools</strong> is an API Builder, designed to simplify\n" +
@@ -248,6 +248,14 @@ angular.module("api-tools-ui/dashboard/dashboard.html", []).run(["$templateCache
     "          target=\"_blank\">introduction</a> or watch the <a\n" +
     "          href=\"https://api-tools.getlaminas.org/video\" target=\"_blank\">getting started video</a>.\n" +
     "      </p>\n" +
+    "\n" +
+    "      <!-- <div id=\"readme-container\" markdown ng-include=\"'http://localhost:8023/README.md'\">\n" +
+    "\n" +
+    "      </div> -->\n" +
+    "\n" +
+    "      <div ng-app=\"myApp\" ng-controller=\"Dashboard\">\n" +
+    "        <div ng-bind-html=\"renderedHtml\"></div>\n" +
+    "      </div>\n" +
     "  </div>\n" +
     "  </div>\n" +
     "</div>\n" +
