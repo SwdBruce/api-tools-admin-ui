@@ -135,5 +135,16 @@ $ grunt serve --api=<URI to Laminas API Tools Admin API (ends in /api-tools/api)
 > --doc=<URI to API documentation> --port=3001 --host=ag.dev
 ```
 
-Please see our [contributing guide](CONTRIBUTING.md) for information on how to
-run tests and hack on the UI.
+### Custom integration
+
+In main project: 
+ - Add `dist` content to main project => public/api-tools-ui
+ - Remove vendor/laminas-api-tools/api-tools-admin-ui/dist/* 
+```bash
+rm -r vendor/laminas-api-tools/api-tools-admin-ui/dist/
+```
+
+ - Copy public/api-tools-ui to vendor/laminas-api-tools/api-tools-admin-ui/dist
+```bash
+cp -r public/api-tools-ui vendor/laminas-api-tools/api-tools-admin-ui/dist/
+```
