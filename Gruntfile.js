@@ -231,7 +231,8 @@ module.exports = function(grunt) {
             src: [
               'index.html',
               '*.{ico,png,txt}',
-              'api-tools-ui/img/**'
+              'api-tools-ui/img/**', 
+              'api-tools-ui/library/**'
             ]
           },
           {
