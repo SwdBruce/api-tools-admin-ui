@@ -137,7 +137,7 @@ $ grunt serve --api=<URI to Laminas API Tools Admin API (ends in /api-tools/api)
 
 ### Custom integration
 
-In main project: 
+In the main project: 
  - Add `dist` content to main project => public/api-tools-ui
  - Remove vendor/laminas-api-tools/api-tools-admin-ui/dist/* 
 ```bash
